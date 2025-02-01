@@ -1,0 +1,78 @@
+.jpt{
+    background-color: #00b7e57b;
+    
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    box-shadow: 0 10px 5000px 220px var(--shas--);
+    opacity: 0.3;
+    backdrop-filter: blur(100px);
+    position: fixed;
+    bottom:20px;
+    left: 20%;
+    z-index: -1;
+    
+    
+    
+}
+.ppt{
+    background-color: #00b7e5d8;
+    
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    box-shadow: 0 10px 5000px 220px var(--shas--);
+    opacity: 0.3;
+    backdrop-filter: blur(100px);
+    position: fixed;
+    top: 20px;
+    right: 20%;
+    z-index: -1;
+ 
+    
+    
+}
+.kpt{
+    background-color: #00b7e57b;
+    
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    box-shadow: 0 10px 5000px 220px #00c3e57e;
+    opacity: 0.3;
+    backdrop-filter: blur(100px);
+    position: fixed;
+    bottom:-120%;
+    left: 20%;
+    animation: anim 20s linear infinite;
+    z-index: -1;
+    
+    
+}
+.mpt{
+    background-color: #00b7e57b;
+    
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    box-shadow: 0 10px 5000px 220px #00c3e57e;
+    opacity: 0.3;
+    backdrop-filter: blur(100px);
+    position: fixed;
+    bottom: -200%;
+    right: 20%;
+    animation: anim 20s linear infinite;
+    z-index: -1;
+    
+    
+}
+@keyframes anim{
+    0%,50%{
+       transform: rotate(200deg);
+       border-radius: 30%;
+    }
+    30%,100%{
+        transform: rotate(0);
+        border-radius: 80%;
+     }
+}
