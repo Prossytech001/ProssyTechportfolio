@@ -27,7 +27,7 @@ const Pageabout = () => {
             <div className="pag4">
                 
                 <p>In building JavaScript applications, I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale — performance and scalabilty are priorities on my radar.</p>
-                <h2>Curabitur felis lectus, cursus nec ipsum</h2>
+                <h2>Looking forward to work with you</h2>
                 <p>For some reason, this surprises a lot of people. 😅 <Link to='/contact'> Send Email</Link></p>
             </div>
             </div>

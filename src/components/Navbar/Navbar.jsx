@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Navbar/Navba.css'
 import '../../App.css'
-import 'boxicons';
+
 import '../../Home';
 import { FaGithub,FaLinkedin,FaAlignLeft,FaAlignRight } from 'react-icons/fa';
 import '../Navbar/Navb.js'
@@ -11,7 +11,7 @@ import {Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
 import { fadeIn } from '../../Variants.js';
 import { navs } from '../../Naout.js';
-import { CiMenuBurger } from "react-icons/ci";
+
 import { PiSquaresFourThin } from "react-icons/pi";
 
 
@@ -130,7 +130,7 @@ const Navbar = () => {
        <Link to="/contact" 
       ><li >Contact</li></Link>
       </label>
-      <li><div className="togsnavs"><Toggle/>Theme</div></li>
+      <div className="togsnavs"><Toggle/>Theme</div>
           </ul>
         
         </div>

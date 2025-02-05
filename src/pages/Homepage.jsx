@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar.jsx';
 import Hero from '../components/Hero/Hero.jsx';
-import Slide from '../components/Slide/Slide.jsx';
+
 import About from '../components/About/About.jsx';
 import Edu from '../components/Education/Education.jsx';
 import Skill from '../components/Skill/Skill.jsx';
@@ -18,7 +18,7 @@ const Homepage = () => {
     <div>
       <Navbar/>
       <Hero/>
-      <Slide/>
+      
       <About/>
       <Edu/>
       <Skill/>

@@ -1,15 +1,10 @@
 import React from 'react'
 import '../../App.css'
-import 'boxicons';
+
 import '../../Home';
 import '../Hero/Hero.css';
-import img from '../../Assets/image/portfoliopic.png'
-import Ama from '../../Assets/image/amazon.png'
-import { FaArrowRightLong } from "react-icons/fa6";
-import Vis from '../../Assets/image/vscode.png'
-import Pyt from '../../Assets/image/python.png'
-import Html from '../../Assets/image/html.png'
-import Css from '../../Assets/image/css-3.png'
+
+
 import {motion} from 'framer-motion';
 import { fadeIn } from '../../Variants.js';
 import '../Navbar/Navbar.jsx';

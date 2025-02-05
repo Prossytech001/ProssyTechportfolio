@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import Homepage from './pages/Homepage.jsx';
 import Aboutpage from './pages/Aboutpage.jsx';
 import Education from './pages/Educationpage.jsx';
@@ -10,49 +10,36 @@ import './Home.js';
 import './App.css';
 import {motion} from 'framer-motion';
 import { fadeIn } from './Variants.js';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
- const router = createBrowserRouter ([
-  {
-    element: <Navbar/>
-   },
-   {
-    path: '/',
-    element: <Homepage/>
-   },
-   {
-    path: '/about',
-    element: <Aboutpage/>
-   },
-   {
-    path: '/blog',
-    element: <Education/>
-   },
-   {
-    path: '/skill',
-    element: <Skillpage/>
-   },
-   {
-    path: '/featuredpost',
-    element: <Projectpage/>
-   },
-   {
-    path: '/contact',
-    element: <Contactpage/>
-   }
+import { BrowserRouter, Routes , Route } from 'react-router-dom';
+import Scrolltop from './components/Scrolltotop.jsx';
 
-
-
-
-
- ])
+ 
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <div>
+      <BrowserRouter>
+      <Scrolltop/>
+<Routes>
+<Route path='/' element={<Homepage/>}/>
+<Route path='/about' element={<Aboutpage/>}/>
+<Route path='/blog' element={<Education/>}/>
+<Route path='/skill' element={<Skillpage/>}/>
+<Route path='/featuredpost' element={<Projectpage/>}/>
+<Route path='/contact' element={<Contactpage/>}/>
+
+
+
+
+</Routes>
+
+
+
+
+      </BrowserRouter>
       
-      <RouterProvider router={router} />
     
     </div>
   )
